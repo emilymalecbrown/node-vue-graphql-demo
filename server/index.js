@@ -9,4 +9,4 @@ app.get('/', (req, res) => res.send(`We're working.`));
 
 apolloServer.applyMiddleware({ app });
 
-app.listen(port, () => console.log(`🚀 GraphQL Server ready at http://localhost:4000${apolloServer.graphqlPath}`));
+app.listen(port, () => console.log(`🚀 GraphQL Server ready at http://localhost:3000${apolloServer.graphqlPath}`));

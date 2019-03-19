@@ -5,7 +5,7 @@
   "author": "emilymalecbrown@gmail.com",
   "scripts": {
     "setup": "yarn && yarn seed",
-    "start": "concurrently -p \"[{name}]\" -n \"client,server\" -c \"magenta.bold,cyan.bold\" \"vue serve client/main.js\" \"nodemon server/index.js --exec babel-node --presets babel-preset-env\""
+    "start": "concurrently -p \"[{name}]\" -n \"client,server\" -c \"magenta.bold,cyan.bold\" \"vue serve client/main.js\" \"nodemon server/index.js --ignore db.json --exec babel-node --presets babel-preset-env\""
   },
   "dependencies": {
     "apollo-cache-inmemory": "^1.5.1",

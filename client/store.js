@@ -8,15 +8,15 @@ Vue.use(Vuex);
 
 export default new Vuex.Store ({
   state: () => ({
-    countryEmojis: [],
-    countryLanguage: [],
+    countryEmojis: false,
+    countryLanguages: false,
   }),
 
   getters: {},
 
   actions: {
     async getCountryEmojis({ commit }) {
-      // TODO
+      // TODO - add a graphQL call here
       const response = { data: { countries: [] } }
 
       commit('setCountryEmojis', response.data.countries);

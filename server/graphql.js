@@ -1,4 +1,5 @@
 import { ApolloServer, gql } from 'apollo-server-express';
+import db from './db';
 
 // Type definitions define the "shape" of your data and specify
 // which ways the data can be fetched from the GraphQL server.
@@ -19,7 +20,9 @@ const typeDefs = gql`
 // We will eventually retrieve countries from our local DB.
 const resolvers = {
   Query: {
-    countries: () => countries,
+    countries: () => {
+      return ''
+    },
   },
 };
 
