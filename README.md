@@ -14,6 +14,9 @@ yarn setup
 yarn start
 ```
 
+Client server will be running at `localhost:8080`
+Express server (GraphQL endpoint) will be running at `localhost:3000/graphql`
+
 ### Building out this project
 
 This project provides enough scaffolding to get you started playing around with GraphQL from both the client and the server. The inital starting point is missing some key pieces that need to be implemented before anything works:
