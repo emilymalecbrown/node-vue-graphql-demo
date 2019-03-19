@@ -1,0 +1,29 @@
+{
+  "name": "rev-graphql-demo",
+  "version": "1.0.0",
+  "description": "GraphQL Demo / Playground for Friends",
+  "author": "emilymalecbrown@gmail.com",
+  "scripts": {
+    "setup": "yarn && yarn seed",
+    "start": "concurrently -p \"[{name}]\" -n \"client,server\" -c \"magenta.bold,cyan.bold\" \"vue serve client/main.js\" \"nodemon server/index.js --exec babel-node --presets babel-preset-env\""
+  },
+  "dependencies": {
+    "apollo-cache-inmemory": "^1.5.1",
+    "apollo-client": "^2.5.1",
+    "apollo-link-http": "^1.5.14",
+    "apollo-server": "^2.4.8",
+    "express": "^4.16.4",
+    "graphql": "^14.1.1",
+    "lowdb": "^1.0.0",
+    "vuex": "^3.1.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.5.1",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "concurrently": "^4.1.0",
+    "nodemon": "^1.18.10"
+  },
+  "license": "MIT",
+  "main": "index.js"
+}
