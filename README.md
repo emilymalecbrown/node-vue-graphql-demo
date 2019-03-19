@@ -1,6 +1,6 @@
 ### GraphQL Intro!
 
-## Project Setup /
+### Project Setup / Helpful Commands
 
 #### Install dependencies and seed local db
 ```bash
@@ -12,19 +12,27 @@ yarn setup
 yarn start
 ```
 
-#### Docs for the primary tools used to build this demo / playground
+#### Documentation
+These are docs for the primary tools used to build this demo / playground
 
-### Server
+#### Server
 [Nodemon](https://nodemon.io/)
+
 [Express](https://expressjs.com/en/4x/api.html)
+
 [Apollo Server](https://www.apollographql.com/docs/apollo-server/)
+
 [LowDB](https://github.com/typicode/lowdb)
 
-### Client
+#### Client
 [Vue](https://vuejs.org/v2/api/)
+
 [Vuex](https://vuex.vuejs.org/api/)
+
 [GraphQL Tag](https://github.com/apollographql/graphql-tag)
+
 [Apollo Client*](https://www.apollographql.com/docs/react/)
+
 
 *These docs are "for React" but remain pretty agnostic to the library.
 
