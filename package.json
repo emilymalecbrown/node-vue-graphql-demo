@@ -6,7 +6,7 @@
   "scripts": {
     "setup": "yarn && yarn seed",
     "seed": "babel-node --presets babel-preset-env server/db.js",
-    "start": "concurrently -p \"[{name}]\" -n \"client,server\" -c \"magenta.bold,cyan.bold\" \"vue serve client/main.js\" \"nodemon server/index.js --ignore db.json --exec babel-node --presets babel-preset-env\""
+    "start": "concurrently -p \"[{name}]\" -n \"client,server\" -c \"magenta.bold,cyan.bold\" \"yarn vue-cli-service serve client/main.js\" \"nodemon server/index.js --ignore db.json --exec babel-node --presets babel-preset-env\""
   },
   "dependencies": {
     "apollo-cache-inmemory": "^1.5.1",
@@ -16,6 +16,7 @@
     "express": "^4.16.4",
     "graphql": "^14.1.1",
     "lowdb": "^1.0.0",
+    "vue": "^2.6.9",
     "vuex": "^3.1.0"
   },
   "devDependencies": {

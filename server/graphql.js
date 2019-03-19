@@ -16,7 +16,7 @@ const typeDefs = gql`
   }
 `;
 
-// Resolvers define the technique for fetching the types in the schema.
+// TODO: Resolvers define the technique for fetching the types in the schema.
 // We will eventually retrieve countries from our local DB.
 const resolvers = {
   Query: {
