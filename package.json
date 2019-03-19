@@ -5,6 +5,7 @@
   "author": "emilymalecbrown@gmail.com",
   "scripts": {
     "setup": "yarn && yarn seed",
+    "seed": "babel-node --presets babel-preset-env server/db.js",
     "start": "concurrently -p \"[{name}]\" -n \"client,server\" -c \"magenta.bold,cyan.bold\" \"vue serve client/main.js\" \"nodemon server/index.js --ignore db.json --exec babel-node --presets babel-preset-env\""
   },
   "dependencies": {
@@ -19,10 +20,12 @@
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.5.1",
+    "@vue/cli-service": "^3.5.1",
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "concurrently": "^4.1.0",
-    "nodemon": "^1.18.10"
+    "nodemon": "^1.18.10",
+    "vue-template-compiler": "^2.6.9"
   },
   "license": "MIT",
   "main": "index.js"
