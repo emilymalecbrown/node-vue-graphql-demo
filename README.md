@@ -22,13 +22,10 @@ These are docs for the primary tools used to build this demo / playground
 - [LowDB](https://github.com/typicode/lowdb) : A super simple local JSON store, with ORM like interactions provided by lodash
 
 #### Client
-- [Vue](https://vuejs.org/v2/api/) : Our favorite front end framework
-- [Vuex](https://vuex.vuejs.org/api/) : State management for Vue
-- [GraphQL Tag](https://github.com/apollographql/graphql-tag) : Used to build GraphQL tags from string literals
-- [Apollo Client](https://www.apollographql.com/docs/react/) : Provides tools for connection to GraphQL
-
-
-*These docs are "for React" but remain pretty agnostic to the library.
+- [Vue](https://vuejs.org/v2/api/) Our favorite front end framework
+- [Vuex](https://vuex.vuejs.org/api/) State management for Vue
+- [GraphQL Tag](https://github.com/apollographql/graphql-tag) Used to build GraphQL tags from string literals
+- [Apollo Client](https//www.apollographql.com/docs/react/) Provides tools for connection to GraphQL. Note: These docs are "for React" but remain pretty framework agnostic
 
 ### Process Management
-- [concurrently](https://github.com/kimmobrunfeldt/concurrently#readme) : This tool makes running the client and server in parallel easier by enabling us to run one yarn command to spin up both processes!
+- [concurrently](https://github.com/kimmobrunfeldt/concurrently#readme) This tool makes running the client and server in parallel easier by enabling us to run one yarn command to spin up both processes!

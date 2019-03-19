@@ -6,28 +6,24 @@ import queries from './graphql/queries.js';
 
 Vue.use(Vuex);
 
-new Vuex.Store ({
+export default new Vuex.Store ({
   state: () => ({
     countryEmojis: [],
     countryLanguage: [],
   }),
 
-  getters: {
-    countries(state) {
-      return state.countries;
-    },
-  },
+  getters: {},
 
   actions: {
-    async getCountryEmojis({ rootState, commit }) {
+    async getCountryEmojis({ commit }) {
       // TODO
-      // const response = await SOME GRAPHQL CALL
+      const response = { data: { countries: [] } }
 
       commit('setCountryEmojis', response.data.countries);
     },
-    async getCountryLanguages({ rootState, commit }) {
-      // TODO
-      // const response = await SOME GRAPHQL CALL
+    async getCountryLanguages({ commit }) {
+      // TODO - add a graphQL call here
+      const response = { data: { countries: [] } }
 
       commit('setCountryLanguages', response.data.countries);
     },
@@ -35,10 +31,10 @@ new Vuex.Store ({
 
   mutations: {
     setCountryEmojis(state, countries) {
-      state.countryEmojis = countries;
+      // state.countryEmojis = ;
     },
-    setCountryLanguages(state, languages) {
-      state.countryLanguages = languages;
+    setCountryLanguages(state, countries) {
+      // state.countryLanguages = ;
     },
   },
 });
