@@ -118,3 +118,5 @@ db.defaults({
     }
   ]})
   .write();
+
+export default db;
