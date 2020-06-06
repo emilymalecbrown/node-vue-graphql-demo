@@ -12,7 +12,7 @@
     "apollo-cache-inmemory": "^1.5.1",
     "apollo-client": "^2.5.1",
     "apollo-link-http": "^1.5.14",
-    "apollo-server-express": "^2.4.8",
+    "apollo-server-express": "^2.14.2",
     "express": "^4.16.4",
     "graphql": "^14.1.1",
     "lowdb": "^1.0.0",
